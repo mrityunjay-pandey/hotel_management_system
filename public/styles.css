@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-card i {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color: #3498db;
+}
+
+.dashboard-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7f8c8d;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: #e9ecef;
+}
+
+.tab-btn.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Operation Section Styles */
+.operation-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.operation-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.search-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+.action-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-available {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.status-occupied {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.status-maintenance {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.status-confirmed {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.status-checked-in {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.status-checked-out {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+.status-cancelled {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.status-pending {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.status-paid {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.status-refunded {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        border-radius: 0;
+    }
+    
+    .tab-btn:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .tab-btn:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.edit-form h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.edit-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.edit-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.edit-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.edit-form .save-btn,
+.edit-form .cancel-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.edit-form .save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-form .save-btn:hover {
+    background-color: #45a049;
+}
+
+.edit-form .cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-form .cancel-btn:hover {
+    background-color: #da190b;
+}
+
+/* Status Badge Styles */
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-available {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status-occupied {
+    background-color: #2196F3;
+    color: white;
+}
+
+.status-maintenance {
+    background-color: #FF9800;
+    color: white;
+}
+
+.status-confirmed {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status-checked-in {
+    background-color: #2196F3;
+    color: white;
+}
+
+.status-checked-out {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+.status-cancelled {
+    background-color: #f44336;
+    color: white;
+}
+
+.status-pending {
+    background-color: #FF9800;
+    color: white;
+}
+
+.status-paid {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status-refunded {
+    background-color: #f44336;
+    color: white;
+} 
