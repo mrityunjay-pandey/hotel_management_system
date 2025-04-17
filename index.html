@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Banking Management System</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+=======
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
+</head>
+<body>
+    <div class="container">
+        <header>
+<<<<<<< HEAD
+            <h1>Banking Management System</h1>
+=======
+            <h1>Hotel Management System</h1>
+            <p>Manage your hotel operations efficiently</p>
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
+        </header>
+
+        <div class="dashboard">
+            <div class="dashboard-card">
+<<<<<<< HEAD
+                <i class="fas fa-users"></i>
+                <div class="card-content">
+                    <h3>Total Customers</h3>
+                    <p id="totalCustomers">0</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-user-check"></i>
+                <div class="card-content">
+                    <h3>Active Customers</h3>
+                    <p id="activeCustomers">0</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <div class="card-content">
+                    <h3>Total Balance</h3>
+                    <p id="totalBalance">₹0</p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div class="card-content">
+                    <h3>Active Loans</h3>
+                    <p id="activeLoans">0</p>
+=======
+                <i class="fas fa-bed"></i>
+                <div class="dashboard-info">
+                    <h3>Rooms</h3>
+                    <div class="dashboard-stats">
+                        <div class="stat">
+                            <span class="stat-label">Total:</span>
+                            <span class="stat-value" id="totalRooms">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Available:</span>
+                            <span class="stat-value" id="availableRooms">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Occupied:</span>
+                            <span class="stat-value" id="occupiedRooms">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-calendar-check"></i>
+                <div class="dashboard-info">
+                    <h3>Bookings</h3>
+                    <div class="dashboard-stats">
+                        <div class="stat">
+                            <span class="stat-label">Total:</span>
+                            <span class="stat-value" id="totalBookings">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Checked In:</span>
+                            <span class="stat-value" id="checkedInBookings">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Today:</span>
+                            <span class="stat-value" id="todayBookings">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-users"></i>
+                <div class="dashboard-info">
+                    <h3>Guests</h3>
+                    <div class="dashboard-stats">
+                        <div class="stat">
+                            <span class="stat-label">Total:</span>
+                            <span class="stat-value" id="totalGuests">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Current:</span>
+                            <span class="stat-value" id="currentGuests">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <i class="fas fa-dollar-sign"></i>
+                <div class="dashboard-info">
+                    <h3>Revenue</h3>
+                    <div class="dashboard-stats">
+                        <div class="stat">
+                            <span class="stat-label">Total:</span>
+                            <span class="stat-value" id="totalRevenue">$0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">This Month:</span>
+                            <span class="stat-value" id="monthRevenue">$0</span>
+                        </div>
+                    </div>
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+<<<<<<< HEAD
+            <button class="tab-btn active" data-tab="customers">Customers</button>
+            <button class="tab-btn" data-tab="transactions">Transactions</button>
+            <button class="tab-btn" data-tab="loans">Loans</button>
+        </div>
+
+        <div id="customers-tab" class="tab-content active">
+            <div class="operation-section">
+                <h2>Add New Customer</h2>
+                <form id="addCustomerForm">
+                    <div class="form-group">
+                        <input type="text" id="accountNumber" placeholder="Account Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="address" placeholder="Address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="dateOfBirth" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="idProof" placeholder="ID Proof Type" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="idNumber" placeholder="ID Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="accountType" required>
+                            <option value="">Select Account Type</option>
+                            <option value="Savings">Savings</option>
+                            <option value="Current">Current</option>
+                            <option value="Fixed">Fixed</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Add Customer</button>
+                </form>
+            </div>
+
+            <div class="search-section">
+                <h2>Search Customers</h2>
+                <div class="search-box">
+                    <input type="text" id="customerSearchInput" placeholder="Search by name, account number, or email">
+                    <button id="customerSearchBtn" class="btn">Search</button>
+                </div>
+            </div>
+
+            <div class="list-section">
+                <h2>Customer List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Account No.</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Account Type</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customersBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="transactions-tab" class="tab-content">
+            <div class="operation-section">
+                <h2>New Transaction</h2>
+                <form id="addTransactionForm">
+                    <div class="form-group">
+                        <input type="text" id="transactionAccount" placeholder="Account Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="transactionType" required>
+                            <option value="">Select Transaction Type</option>
+                            <option value="Credit">Credit</option>
+                            <option value="Debit">Debit</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="amount" placeholder="Amount" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="description" placeholder="Description" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Process Transaction</button>
+                </form>
+            </div>
+
+            <div class="search-section">
+                <h2>Search Transactions</h2>
+                <div class="search-box">
+                    <input type="text" id="transactionSearchInput" placeholder="Search by account number or description">
+                    <button id="transactionSearchBtn" class="btn">Search</button>
+                </div>
+            </div>
+
+            <div class="list-section">
+                <h2>Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Account No.</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionsBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="loans-tab" class="tab-content">
+            <div class="operation-section">
+                <h2>New Loan Application</h2>
+                <form id="addLoanForm">
+                    <div class="form-group">
+                        <input type="text" id="loanAccount" placeholder="Account Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="loanType" required>
+                            <option value="">Select Loan Type</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Home">Home</option>
+                            <option value="Education">Education</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="loanAmount" placeholder="Loan Amount" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="interestRate" placeholder="Interest Rate (%)" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="term" placeholder="Term (months)" required>
+                    </div>
+                    <button type="submit" class="btn">Apply for Loan</button>
+                </form>
+            </div>
+
+            <div class="search-section">
+                <h2>Search Loans</h2>
+                <div class="search-box">
+                    <input type="text" id="loanSearchInput" placeholder="Search by account number or loan type">
+                    <button id="loanSearchBtn" class="btn">Search</button>
+                </div>
+            </div>
+
+            <div class="list-section">
+                <h2>Loan Applications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Account No.</th>
+                            <th>Loan Type</th>
+                            <th>Amount</th>
+                            <th>Interest Rate</th>
+                            <th>Term</th>
+                            <th>Monthly Payment</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="loansBody"></tbody>
+                </table>
+            </div>
+        </div>
+=======
+            <button class="tab-btn active" data-tab="rooms">Rooms</button>
+            <button class="tab-btn" data-tab="guests">Guests</button>
+            <button class="tab-btn" data-tab="bookings">Bookings</button>
+        </div>
+
+        <main>
+            <!-- Rooms Tab -->
+            <div class="tab-content active" id="rooms-tab">
+                <div class="operation-section">
+                    <h2>Add New Room</h2>
+                    <form id="addRoomForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="roomNumber">Room Number:</label>
+                                <input type="text" id="roomNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="roomType">Room Type:</label>
+                                <select id="roomType" required>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Deluxe">Deluxe</option>
+                                    <option value="Suite">Suite</option>
+                                    <option value="Presidential">Presidential</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="price">Price per Night:</label>
+                                <input type="number" id="price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="floor">Floor:</label>
+                                <input type="number" id="floor" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="amenities">Amenities (comma separated):</label>
+                            <input type="text" id="amenities" placeholder="WiFi, TV, Mini Bar">
+                        </div>
+                        <button type="submit" class="btn">Add Room</button>
+                    </form>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Search Rooms</h2>
+                    <div class="search-box">
+                        <input type="text" id="roomSearchInput" placeholder="Search by room number, type, or status...">
+                        <button id="roomSearchBtn" class="btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Room List</h2>
+                    <div class="records-container">
+                        <table id="roomsTable">
+                            <thead>
+                                <tr>
+                                    <th>Room #</th>
+                                    <th>Type</th>
+                                    <th>Floor</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Amenities</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="roomsBody">
+                                <!-- Rooms will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guests Tab -->
+            <div class="tab-content" id="guests-tab">
+                <div class="operation-section">
+                    <h2>Add New Guest</h2>
+                    <form id="addGuestForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestName">Name:</label>
+                                <input type="text" id="guestName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestEmail">Email:</label>
+                                <input type="email" id="guestEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestPhone">Phone:</label>
+                                <input type="text" id="guestPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestAddress">Address:</label>
+                                <input type="text" id="guestAddress" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="idProof">ID Proof Type:</label>
+                                <select id="idProof" required>
+                                    <option value="Passport">Passport</option>
+                                    <option value="Driver's License">Driver's License</option>
+                                    <option value="National ID">National ID</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="idNumber">ID Number:</label>
+                                <input type="text" id="idNumber" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Add Guest</button>
+                    </form>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Search Guests</h2>
+                    <div class="search-box">
+                        <input type="text" id="guestSearchInput" placeholder="Search by name, email, or phone...">
+                        <button id="guestSearchBtn" class="btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Guest List</h2>
+                    <div class="records-container">
+                        <table id="guestsTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>ID Proof</th>
+                                    <th>ID Number</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="guestsBody">
+                                <!-- Guests will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bookings Tab -->
+            <div class="tab-content" id="bookings-tab">
+                <div class="operation-section">
+                    <h2>Create New Booking</h2>
+                    <form id="addBookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookingGuest">Guest:</label>
+                                <select id="bookingGuest" required>
+                                    <!-- Guests will be populated here -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingRoom">Room:</label>
+                                <select id="bookingRoom" required>
+                                    <!-- Rooms will be populated here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkIn">Check-In Date:</label>
+                                <input type="date" id="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut">Check-Out Date:</label>
+                                <input type="date" id="checkOut" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="totalAmount">Total Amount:</label>
+                                <input type="number" id="totalAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentStatus">Payment Status:</label>
+                                <select id="paymentStatus" required>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Paid">Paid</option>
+                                    <option value="Refunded">Refunded</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests:</label>
+                            <textarea id="specialRequests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Create Booking</button>
+                    </form>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Search Bookings</h2>
+                    <div class="search-box">
+                        <input type="text" id="bookingSearchInput" placeholder="Search by status or payment status...">
+                        <button id="bookingSearchBtn" class="btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="operation-section">
+                    <h2>Booking List</h2>
+                    <div class="records-container">
+                        <table id="bookingsTable">
+                            <thead>
+                                <tr>
+                                    <th>Guest</th>
+                                    <th>Room</th>
+                                    <th>Check-In</th>
+                                    <th>Check-Out</th>
+                                    <th>Status</th>
+                                    <th>Amount</th>
+                                    <th>Payment</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookingsBody">
+                                <!-- Bookings will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
+    </div>
+    <script src="public/script.js"></script>
+</body>
+</html> 

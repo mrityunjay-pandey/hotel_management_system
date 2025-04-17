@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "banking-management-system",
   "version": "1.0.0",
   "description": "A banking management system with customer accounts, transactions, and loan management",
+=======
+  "name": "dbms-demo",
+  "version": "1.0.0",
+  "description": "DBMS Operations Demo with MongoDB",
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,10 +17,14 @@
     "express": "^4.18.2",
     "mongoose": "^7.5.0",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "dotenv": "^16.3.1",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.1",
     "validator": "^13.11.0"
+=======
+    "dotenv": "^16.3.1"
+>>>>>>> 65fe9be3b724494e6f05b1a055bf7c3c4d3984af
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
